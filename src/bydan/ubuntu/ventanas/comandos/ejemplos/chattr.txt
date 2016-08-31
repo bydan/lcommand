@@ -1,0 +1,33 @@
+Mostrar atributos especiales. 
+lsattr 
+
+Permite escribir abriendo un fichero solamente modo append.
+chattr +a file1
+
+Permite que un fichero sea comprimido / descomprimido automaticamente.
+chattr +c file1
+
+Asegura que el programa ignore borrar los ficheros durante la copia de seguridad.
+chattr +d file1 
+
+Convierte el fichero en invariable, por lo que no puede ser eliminado, alterado, renombrado, ni enlazado.
+chattr +i file1
+
+Permite que un fichero sea borrado de forma segura.
+chattr +s file1 
+
+Asegura que un fichero sea modificado, los cambios son escritos en modo synchronous como con sync.
+chattr +S file1 
+
+Te permite recuperar el contenido de un fichero aún si este está cancelado.
+chattr +u file1
+
+D
+Cambios disco inmediato
+
+d
+backup
+
+i
+Index
+

@@ -1,0 +1,12 @@
+Grupo Primario
+Grupo defecto cuando se crea archivos y carpetas
+
+
+Otros Grupos
+
+
+(Muestra grupos, primero es el grupo primario)
+groups
+
+Cambio de grupo Primario, creo es temporal
+newgrp ventas

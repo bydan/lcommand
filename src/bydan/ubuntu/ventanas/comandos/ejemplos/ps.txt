@@ -1,0 +1,9 @@
+Principales
+ps -x | ps -a | ps -u
+
+Busqueda
+ps aux | grep http
+
+Usuario
+ps -u username
+ps u U username

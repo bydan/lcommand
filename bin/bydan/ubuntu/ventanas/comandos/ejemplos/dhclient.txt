@@ -1,0 +1,2 @@
+Activar la interface ‘eth0′ en modo dhcp.
+dhclient eth0

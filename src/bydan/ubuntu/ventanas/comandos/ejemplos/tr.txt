@@ -1,0 +1,3 @@
+Sustituir
+
+tr texto_origen texto_final < fichero.txt

@@ -1,0 +1,31 @@
+Kill
+Aplastar k mientras muestra top, ingresa PID para kill
+
+Aplastar r para renice
+
+
+
+-b: Starts pkl in batch mode
+-d: Tells pkl what delay it should use between samples
+-n: Tells pkl how often it should produce its output in batch mode
+For instance, the following would tell pkl to run in batch mode with a 5-second interval,
+doing its work two times:
+
+top -b -d 5 -n 2
+
+
+
+
+Keys	Meaning
+h or ?	Help
+l	Toggle load statistics
+t	Toggle time statistics
+m	Toggle memory usage statistics
+<	Move sorted column to the left
+>	Move sorted column to the right
+F	Choose sorted field
+R	Toggle sort direction
+P	Sort by % CPU
+M	Sort by % memory used
+k	Kill a process (or send it a signal)
+r	Renice priority of a process

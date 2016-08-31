@@ -1,0 +1,40 @@
+mount /what /where
+
+cd-rom
+
+mount /dev/cdrom /media/
+
+DISCO
+Crear path(bydan/ATARECURSOS)
+sudo mount -t ntfs /dev/sda5  /media/bydan/ATARECURSOS
+
+
+SAMBA
+
+mount -t cifs -o username=bydan //fo-pc/doc1 /mnt
+
+Desmontar
+sudo umount -f /media/bydan/ATARECURSOS
+
+umount -f /direccion
+umount -l /direccion
+
+
+Opciones
+Media
+
+Floppy			/dev/fd0
+Hard Drives		/dev/hdX	,	/dev/sdX
+USB				/dev/sdX
+Windows Share	//computaer/share
+NFS				computaer:/share
+
+File System
+minix, ext2, ext3, ext4, reiser, xfs
+msdos,vfat,ntfs,cifs,nfs
+
+Ver Montados
+/etc/mtab
+
+Ver Todos
+mount

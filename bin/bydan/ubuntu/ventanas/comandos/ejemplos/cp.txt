@@ -1,0 +1,38 @@
+cp source destination
+
+-v verbose, muestra detalle
+
+Copia Archivo host a carpeta pruebas
+cp /etc/hosts /home/alumno/pruebas/
+
+Copia todos archivos odt a carpeta textos
+de carpeta actual 
+cp *.odt textos/
+
+Copia todos archivos g* a carpeta actual
+empieza con g
+cp /usr/bin/g* .
+
+
+Recursivo o Subcarpetas (Tambien -R)
+cp -r multimedia/* multimedia2
+
+Copiar con Background
+cp -r /usr/src/linux /tmp &
+
+
+Copiar un directorio dentro del directorio actual de trabajo
+cp -a /tmp/dir1 . 
+
+No sobreescribir
+usar -i
+Todas respuestas no , -n
+
+Opciones
+-a Se copia propiedades
+-b Se copia Backup si sobrescribe
+-f forza si sobreescribe
+-i interactivo si sobreescribe
+-p preserva atributos
+-r recursivo
+-u update, copia solo si destino es mas antiguo o no existe

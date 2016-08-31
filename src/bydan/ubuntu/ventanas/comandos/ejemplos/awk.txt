@@ -1,0 +1,11 @@
+Busqueda Expresion Regular
+awk '/M[ei]*ra*/ {print}' awkdemo.txt
+
+Multiples Busquedas
+awk '/civil|electrical/ {print}' awkdemo.txt
+
+Mostrar 2 campos
+awk -F"|" '/Pass/ {print $2, $3}' awkdemo.txt
+
+Mostrar Campos mismo tamanio
+awk -F"|" '/Pass/ {printf "%4d %-25s %-15s \n",NR,$2,$3 }' awkdemo.txt

@@ -1,0 +1,2 @@
+Cambia de nombre
+groupmod -n clerks sales

@@ -1,0 +1,2 @@
+Enumerar
+ls -l /etc/ppp | nl 

@@ -1,0 +1,8 @@
+Ultimo
+!! 
+
+ultimo ls
+!ls
+
+Ultimo desde final
+!-5

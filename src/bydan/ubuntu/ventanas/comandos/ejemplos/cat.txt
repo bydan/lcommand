@@ -1,0 +1,6 @@
+Abrir Varios Documentos
+$ cat docu1 docu2 docu3 docu4 docu5 docu6
+
+Abrir con Busqueda
+cat fich[1-6]
+$ cat fich*

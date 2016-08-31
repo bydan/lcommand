@@ -1,0 +1,18 @@
+Borrar Carpeta (f=Sin preguntar confirmacion)
+rm -rf multimedia_copia/
+
+Preguntar antes de Borrar (i)
+rm -ri multimedia_copia/
+
+Eliminar Varios
+rm *.txt
+
+Eliminar una carpeta llamada ‘dir1′ con su contenido de forma recursiva. (Si lo borro recursivo estoy diciendo que es con su contenido).
+rm -rf dir1
+
+rmdir
+Si directorio esta vacio
+
+Parametros
+i -> Interactivo, pregunta antes de borrar
+-v -> Verbose, muestra que esta pasando

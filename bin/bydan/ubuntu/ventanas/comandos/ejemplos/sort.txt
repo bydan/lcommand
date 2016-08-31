@@ -1,0 +1,31 @@
+EJEMPLO
+1)
+head -5 /etc/passwd > mypasswd                    
+cat mypasswd
+sort mypasswd
+
+
+2)
+sort -t: -n -k3 /etc/passwd
+
+Reversa
+sort -t: -n -r -k3 mypasswd
+
+
+
+3)
+Ejemplo del tipo
+
+bob:smith:23
+nick:jones:56
+sue:smith:67
+
+Ordenar por varias columnas
+sort -t: -k2 -k1 -k3n filename
+
+
+
+Opciones
+-t separador
+-k numero de campo
+-r reversa

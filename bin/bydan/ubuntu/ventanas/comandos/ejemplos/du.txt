@@ -1,0 +1,8 @@
+Tamaño Orden varias Carpetas
+du -h -sk /home/bydan/* | sort -rn
+
+Tamaño total carpeta especifica
+du -hs /usr
+
+Tamaño total por partes de carpeta especifica
+du -h /usr

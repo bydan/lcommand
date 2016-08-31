@@ -1,0 +1,63 @@
+Crear un archivo conteniendo ‘file1′, ‘file2′ y’dir1′.
+tar -cvf archive.tar file1 file2 dir1: 
+
+Backup
+tar -cvf /tmp/home.tar /home
+
+Backup varias carpetas
+tar -cvf /tmp/sys_backup.tar /home /srv /root /var
+
+BACKUP MAS COMPRIMIDO (z)
+Backup
+tar -cvzf /tmp/home.tar.gz /home
+
+Backup varias carpetas
+tar -cvzf /tmp/sys_backup.tar.gz /home /srv /root /var
+
+Tar con Busqueda
+tar -cf access_logs.tar access_log*
+
+Mostrar los contenidos de un archivo.
+tar -tf archive.tar: 
+
+Extraer un tarball 
+En / tmp.
+tar -xvf archive.tar -C /tmp: 
+tar -xvf /file.tar
+
+En somedir
+tar -xvf /file.tar -C /somedir
+
+
+Extraer un tarball comprimido 
+tar -zxvf /file.tar.gz
+
+Añadir a Existente
+tar -rvf udev.tar /etc/hosts
+
+BZIP
+Crear un tarball comprimido dentro de bzip2.
+tar -cvfj archive.tar.bz2 dir1: 
+
+Descomprimir un archivo tar comprimido en bzip2
+tar -xvfj archive.tar.bz2: 
+
+GZIP
+Crear un tarball comprimido en gzip.
+tar -cvfz archive.tar.gz dir1:
+
+Descomprimir un archive tar comprimido en gzip. 
+tar -xvfz archive.tar.gz: 
+
+Para bzip2
+tar –cjf file.tbz access_log*).
+
+Mostrar info
+tar –cjf file.tbz access_log*).
+
+Opciones
+z Comprimir como gzip
+j bzip
+t lista de archivos
+x descomprimir
+v verbose

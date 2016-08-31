@@ -1,0 +1,27 @@
+ABSOLUTO
+De esta forma, esta línea
+$ chmod 755 hola_mundo.rb
+
+
+RELATIVO
+Sería equivalente a estas tres
+$ chmod u+rwx hola_mundo.rb
+$ chmod g+rx-w hola_mundo.rb
+$ chmod o+rx-w hola_mundo.rb
+
+Todos
+chmod +x file1
+
+Partes
+chmod g+x,o-r file1
+chmod ug+r,o-w abc.txt
+
+Lote
+chmod ugo+rwx directory1
+chmod go-rwx directory1
+
+Explicito
+chmod u=r-x abc.txt
+
+Aplica a todo (a)
+chmod a+x

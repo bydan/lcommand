@@ -1,0 +1,6 @@
+ls -l
+
+find / -user user1
+
+
+find / -group group1

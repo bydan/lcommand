@@ -1,0 +1,23 @@
+Mata proceso PID 9 
+kill -9 PID
+
+Mata Programa amsn
+kill all amsn
+
+Varios
+kill 12,45,89
+
+KILLALL Y PKILL
+Mas Versatil
+
+-I ignore case
+-i interactivo(pregunta)
+-r Con Expresiones regulares
+-u A un determinado usuario
+
+killall -u bydan
+killall -r http
+
+PKILL
+Procesos con determinado padre
+pkill -P 1478

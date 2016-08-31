@@ -1,0 +1,3 @@
+Borra home carpeta
+
+-r

@@ -1,0 +1,16 @@
+Comprimir, en zip, varios archivos y directorios de forma simultánea.
+zip -r file1.zip file1 file2 dir1
+
+Comprimir con Busqueda
+zip logs.zip logs/*
+
+Recursivo
+zip -r logs.zip logs
+
+Mostrar info
+unzip -l logs.zip
+
+Descomprimir con busqueda
+unzip logs.zip logs/access_log
+
+unzip logs.zip logs/access_log.*

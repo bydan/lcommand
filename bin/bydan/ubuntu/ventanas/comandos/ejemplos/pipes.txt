@@ -1,0 +1,6 @@
+ls -l /etc/ppp | nl | tail -5
+
+ls -l /etc/ppp | tail -5 | nl
+
+Numero de archivos de una carpeta
+ls /etc | wc -l

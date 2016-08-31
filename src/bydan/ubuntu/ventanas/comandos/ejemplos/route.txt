@@ -1,0 +1,10 @@
+Gateway
+
+Configurar entrada predeterminada.
+route add -net 0/0 gw IP_Gateway
+
+Configurar ruta estática para buscar la red ’192.168.0.0/16′.
+route add -net 192.168.0.0 netmask 255.255.0.0 gw 192.168.1.1
+
+Eliminar la ruta estática.
+route del 0/0 gw IP_gateway 

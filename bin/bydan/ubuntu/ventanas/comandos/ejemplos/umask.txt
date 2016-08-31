@@ -1,0 +1,40 @@
+Diferente por usuario
+
+Default
+
+file	rw-rw-rw-
+directories	rwxrwxrwx
+
+
+
+The first 0 is indicates that the umask is given as an octal number.
+The second 0 indicates which permissions to subtract from the default user owner's permissions.
+The third 0 indicates which permissions to subtract from the default group owner's permissions.
+The last number 2 indicates which permissions to subtract from the default other's permissions.
+
+
+
+EJEMPLO APLICACION UMASK
+Archivo
+File Default	667
+Umask	-027
+Result	640
+
+umask 027
+touch sample
+ls -l sample
+
+
+Carpeta
+Directory Default	777
+Umask	-027
+Result	750
+
+
+umask 027
+mkdir test-dir
+ls -ld test-dir
+
+
+Umask es temporal por sesion shell
+

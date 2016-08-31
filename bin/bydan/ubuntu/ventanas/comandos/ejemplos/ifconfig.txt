@@ -1,0 +1,6 @@
+Configurar Red
+ifconfig eth0 192.168.1.1 netmask 255.255.255.0
+
+
+Configurar ‘eth0′en modo común para obtener los paquetes (sniffing).
+ifconfig eth0 promisc

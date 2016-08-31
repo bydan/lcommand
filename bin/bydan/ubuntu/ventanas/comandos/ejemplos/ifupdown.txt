@@ -1,0 +1,5 @@
+Activar
+ifup eth0
+
+Desactivar
+ifdown eth0

@@ -1,0 +1,15 @@
+chown who what
+
+Recursivo
+chown -R user1 directory1
+
+Si se cambia grupo .,:
+chown .who what
+chown :who what
+
+Usuario y Grupo
+chown user1.group1 folder1
+
+Solo grupo
+chown :group /path/to/file
+chown .group /path/to/file

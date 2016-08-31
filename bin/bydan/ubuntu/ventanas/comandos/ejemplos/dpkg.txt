@@ -1,0 +1,11 @@
+Todos
+dpkg -l 
+
+Busqueda por paquete
+dpkg -l "samba*"
+
+Busqueda 2
+dpkg -l "*" | grep samb*
+
+Busqueda Archivo pertenece
+dpkg --search /path/file

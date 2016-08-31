@@ -1,0 +1,11 @@
+Archivo (Lista de grupos)
+/etc/group
+
+Buscar grupo
+getent group sales
+
+Buscar grupo 2
+grep development /etc/group
+
+Buscar sin grupo
+find / -nogroup

@@ -1,0 +1,138 @@
+useradd -m -G usuario1 contabilidad
+
+Opciones
+-c comentario
+-G Grupos
+-g grupo primario
+-m home directory
+
+Usuario con grupo primario y secundarios
+useradd -m -g users -G wheel,research jane
+
+Default
+/etc/default/useradd
+cat /etc/default/useradd
+
+Config
+/etc/login.defs
+
+Cambiar Valor defecto expiracion
+useradd -D -f 30
+
+Defecto 2
+/etc/login.defs
+grep -Ev '^#|^$' /etc/login.defs
+
+
+
+
+Field	Example	Description
+GROUP	100	
+In distributions not using UPG, this will be the default primary group for a new user, if one is not specified with the useradd command. This is normally the "users" group with a GID of 100.
+
+This setting affects the default setting of the /etc/passwd file highlighted below:
+
+bob:x:600:600:bob:/home/bob:/bin/bash
+
+The -g option to the useradd command allows you to use a different primary group than the default when creating a new user account.
+
+HOME	/home	
+The /home directory is the default base directory under which the user's new home directory will be created. This means that a user with an account name of bob would have a home directory of /home/bob.
+
+This setting affects the default setting of the /etc/passwd file highlighted below:
+
+bob:x:600:600:bob:/home/bob:/bin/bash
+
+The -b option to the useradd command allows you to use a different base directory group than the default when creating a new user account.
+
+INACTIVE	-1	
+This value represents the number of days after the password expires that the account is disabled. A value of -1 means this feature is not enabled by default and no "inactive" value is provided for new accounts by default.
+
+This setting affects the default setting of the /etc/shadow file highlighted below in:
+
+bob:pw:15020:5:30:7:60:15050:
+
+The -f option to the useradd command allows you to use a different INACTIVE value than the default when creating a new user account.
+
+EXPIRE		
+By default, there is no value set for the expiration date. Usually, an expiration date is set on an individual account, not all accounts by default.
+
+For example, if you had a contractor that was hired to work until the end of day on November 1, 2013, then you could ensure that they would be unable to login after that date by using the EXPIRE field.
+
+This setting affects the default setting of the /etc/shadow file highlighted below in red:
+
+bob:pw:15020:5:30:7:60:15050:
+
+The -e option to the useradd command allows you to use a different EXPIRE value than the default when creating a new user account.
+
+SHELL	/bin/bash	
+The SHELL setting indicates the default shell for user's when they login to the system.
+
+This setting affects the default setting of the /etc/passwd file highlighted below:
+
+bob:x:600:600:bob:/home/bob:/bin/bash
+
+The -s option to the useradd command allows you to use a different login shell than the default when creating a new user account.
+
+SKEL	/etc/skel	
+The SKEL value determines what "skeleton" directory will have its contents copied into the new users home directory. The contents of this directory are copied into the new user's home directory and the new user is given ownership of the new files.
+
+This provides administrators with an easy way to "populate" a new user account with key configuration files.
+
+The -k option to the useradd command allows you to use a different SKEL directory than the default when creating a new user account.
+
+CREATE_MAIL_SPOOL	yes	
+A "mail spool" is a file where incoming email is placed.
+
+Currently the value for creating a mail spool is yes, which means that users by default are configured with the ability to receive and store local mail. If you are not planning on using local mail, then this value could be changed to no.
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+LOGIN DEFS
+
+Field	Example	Description
+MAIL_DIR	/var/mail/spool	The directory in which the user's mail spool file will be created.
+PASS_MAX_DAYS	99999	
+This setting determines the maximum number of days that a user can continue to use the same password. Since it defaults to 99999 days, or over 200 years, it effectively means users never have to change their password.
+
+Organizations with effective policies for maintaining secure passwords commonly change this value to 60 or 30 days.
+
+This setting affects the default setting of the /etc/shadow file highlighted below:
+
+bob:pw:15020:5:30:7:60:15050:
+
+PASS_MIN_DAYS	0	
+With this set to a default value of 0 (zero), the shortest time that a user is required to keep a password is zero days, which means that they can immediately change a password that they have just set.
+
+If the PASS_MIN_DAYS value was set to 3 days, then after setting a new password, the user would have to wait three days before they could change it again.
+
+This setting affects the default setting of the /etc/shadow file highlighted below:
+
+bob:pw:15020:3:30:7:60:15050:
+
+PASS_MIN_LEN	5	This indicates the minimum number of characters that a password must contain.
+PASS_WARN_AGE	7	
+This is the default for the warning field. As a user approaches the maximum number of days that they can use their password, the system will check to see if it is time to start warning the user about changing their password at login.
+
+This setting affects the default setting of the /etc/shadow file highlighted below:
+
+bob:pw:15020:3:30:7:60:15050:
+
+UID_MIN	500	The UID_MIN determines the first UID that will be assigned to an ordinary user. Any user with a UID that would be less than this value would either be for a system account or the root account.
+UID_MAX	60000	A UID technically could have a value of over four billion. For maximum compatibility it's recommended to leave it at its default value of 60000.
+GID _MIN	500	The GID _MIN determines the first GID that will be assigned to an ordinary group. Any group with a GID that would be less than this value would either be for a system group or the root group.
+GID _MAX	60000	A GID like a UID could have a value of over four billion. Whatever value you use for your UID_MAX, should be used for GID_MAX in order to support UPG.
+CREATE_HOME	yes	The value of this determines whether or not a new directory will be created for the user, when their account is created.
+UMASK	077	
+This UMASK works at the time the user home directory is being created; it will determine what the default permissions will be on this directory. Using the default value of 077 for UMASK means that only the user owner will have any kind of permission to access their directory.
+
+UMASK will be covered in more detail in a later chapter.
+
+USERGROUPS_ENAB	yes	In distributions that feature a private group for each user, as this CentOS example shows, the USERGROUPS_ENAB will have a value of yes. If UPG is not used in the distribution, then this will have a value of no.
+ENCRYPT_METHOD	SHA512	The encryption method that is used to encrypt the users' passwords in the /etc/shadow file. The ENCRYPT_METHOD setting overrides the MD5_CRYPT_ENAB setting (see next row).
+MD5_CRYPT_ENAB	no	This deprecated setting originally allowed the administrator to specify using MD5 encryption of passwords instead of the original DES encryption. It is now superseded by the setting of the ENCRYPT_METHOD.
+ PreviousNext 

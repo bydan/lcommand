@@ -1,0 +1,11 @@
+Busqueda Resultado varios procesos (2 archivos)
+sed -n -e '/electronics/w electro.txt' -e '/civil/w civil.txt' seddemo.txt
+
+Eliminar
+sed '/electronics/d' seddemo.txt > nonelectronics.txt
+
+Reemplazar primera coincidencia
+sed 's/[kK]umar/Roy/' seddemo.txt
+
+Reemplazar en varios procesos
+sed -e 's/electronics/electrical/g' -e 's/civil/metallurgy/g' seddemo.txt

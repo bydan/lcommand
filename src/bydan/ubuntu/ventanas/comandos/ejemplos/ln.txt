@@ -1,0 +1,15 @@
+Acceso Directo (Soft)
+
+ln -s /etc/hosts dns_local
+
+Archivo tipo l (Symbolic) en ls -l
+Inode con ls -il
+
+Para hard
+ln /etc/hosts dns_local_hard
+
+Relacion
+Inode->Hard Link->Soft Link, osea la base o raiz en el Inode
+
+Soft->Acceso directo
+Hard-> Como copia o Puntero

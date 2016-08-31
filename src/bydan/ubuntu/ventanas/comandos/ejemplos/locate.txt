@@ -1,0 +1,2 @@
+Encuentra ficheros con extensión ‘.ps’ ejecutados primeramente con el command ‘updatedb’.
+locate \*.ps

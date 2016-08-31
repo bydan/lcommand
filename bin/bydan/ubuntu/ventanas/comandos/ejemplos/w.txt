@@ -1,0 +1,9 @@
+Column	Example	Description
+USER	root	This column indicates the name of the user who is logged in.
+TTY	tty2	This column indicates which terminal window the user is working in.
+FROM	example.com	Where the user logged in from.
+LOGIN@	10:00	When the user logged in.
+IDLE	43:44	How long the user has been idle since the last command they ran.
+JCPU	0.01s	The total cpu time (s=seconds) used by all processes (programs) run since login.
+PCPU	0.01s	The total cpu time for the current process.
+WHAT	-bash	The current process that the user is running.

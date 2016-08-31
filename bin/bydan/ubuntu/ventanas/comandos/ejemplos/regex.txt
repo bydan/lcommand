@@ -1,0 +1,51 @@
+Cualquier caracter a,d,f,g
+[adfg]
+
+Hola u hola
+[Hh]ola
+
+Rango,Empieza con minuscula
+[a-z]*
+
+Numero
+echo /etc/*[0-9]*
+
+Cadena de caracteres que contienen una f.
+*f*
+
+Cadena de caracteres que empieza por z y le sigue cualquier cosa.
+z*
+
+a?
+Una cadena formada por dos caracteres, el primero una a y el segundo, cualquier
+carácter.
+
+echo /etc/*.???
+
+A[a-z][0-6]
+Una cadena formada por la A mayúscula seguida de cualquier letra minúscula,
+seguida a su vez de un dígito del 0 al 6.
+
+Negacion, que no empieze con
+echo [!DP]*
+
+Otros
+grep --color 'a..' example.txt
+grep --color 'a..c' example.txt                  
+grep --color '[ab][a-d]' example.txt
+grep --color 'd*' example.txt 
+
+Donde
+Cualquier lugar
+grep --color "a" example.txt
+
+Al final
+grep "c$" example.txt                 
+  
+Al inicio
+grep --color "^a" example.txt                     
+
+Caracteres especiales
+grep --color "cd\*" example.txt 
+ 
+ 

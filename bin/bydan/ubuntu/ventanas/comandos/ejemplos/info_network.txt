@@ -1,0 +1,6 @@
+The following table describes additional network configuration files to be aware of. Although they are not specifically listed in the exam objectives, the objectives do include the general term Network configuration, so these files may in fact appear on the exam:
+
+Command	Explanation
+/etc/hosts	This file contains a table of hostnames to IP addresses. It can be used to supplement a DNS server.
+/etc/sysconfig/network	This file has two settings. The NETWORK setting can determine if networking is turned on (yes) or off (no). The HOSTNAME setting defines the local machine's hostname.
+/etc/nsswitch.conf	This file can be used to modify where hostname lookups occur. For example, the setting hosts: files dns would have hostname lookups occur in the /etc/hosts file first and then the DNS server second. If switched to hosts: dns files, the DNS server would be searched first.

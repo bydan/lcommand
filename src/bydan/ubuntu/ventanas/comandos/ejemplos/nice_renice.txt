@@ -1,0 +1,8 @@
+Al arrancar prioridad 5
+nice -n 5 top
+
+Modificar a prioridad 5 de todos procesos de usuario
+renice -5 -u bydan
+
+Con PID
+renice -5 4568

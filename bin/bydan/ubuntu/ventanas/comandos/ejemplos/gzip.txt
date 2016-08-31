@@ -1,0 +1,2 @@
+Informacion y Ratio de compresion
+gzip -l access_log.gz

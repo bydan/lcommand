@@ -1,0 +1,8 @@
+Descarga todo Sitio Web
+wget -r www.example.com
+
+Descarga por Partes
+wget -c www.example.com/file.iso
+
+Descarga cada En Cierto Tiempo
+echo 'wget -c www.example.com/files.iso' | at 09:00

@@ -1,0 +1,5 @@
+Busqueda desde Descripcion
+aptitude search samba
+
+Informacion Paquete
+aptitude show samba

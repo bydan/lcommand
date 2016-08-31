@@ -1,0 +1,16 @@
+Cambia de nombre Archivo
+mv mi_texto.txt carta.txt
+
+Cambia de nombre de Directorio
+mv multimedia2 multimedia_copia
+
+Mueve carta a carpeta Documentos
+mv carta.txt Documentos/
+
+Mueve y cambia nombre a la vez
+mv carta.txt correspondencia/carta01.txt
+
+Opciones
+-i interactivo
+-n No respuesta a todo, no sobrescribe
+-v Detalle proceso 

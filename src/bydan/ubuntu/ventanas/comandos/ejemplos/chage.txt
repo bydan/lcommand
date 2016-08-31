@@ -1,0 +1,15 @@
+Cambia opciones de usuario
+
+Numero dias expiracion clave
+chage -M 60 jane
+
+
+Opciones
+-l	--list	List the account aging information
+-d LAST_DAY	--lastday LAST_DAY	Set the date of the last password change to LAST_DAY
+-E EXPIRE_DATE	--expiredate EXPIRE_DATE	Set account to expire on EXPIRE_DATE
+-h	--help	Show the help for chage
+-I INACTIVE	--inactive INACTIVE	Set account to permit login for INACTIVE days after password expires
+-m MIN_DAYS	--mindays MIN_DAYS	Set the minimum number of days before password can be changed to MIN_DAYS
+-M MAX_DAYS	--maxdays MAX_DAYS	Set the maximum number of days before a password should be changed to MAX_DAYS
+-W WARN_DAYS	--warndays WARN_DAYS	Set the number of days before a password expires to start displaying a warning to WARN_DAYS

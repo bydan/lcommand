@@ -1,0 +1,33 @@
+Clave a usuario
+passwd user1
+
+Bloquear
+passwd -l user1
+
+Desbloquear
+passwd -u user1
+
+Reporte
+passwd -S bydan
+
+Forza cambio password
+-e
+
+Numero minimo expiracion
+-n
+
+Numero maximo expiracion
+-x
+
+
+Datos usuario (Grupo Primario tambien 4to)
+/etc/passwd
+
+Claves usuario
+/etc/shadow
+
+Grupo Primario= para nuevos archivos
+
+
+Cambia numero dias expiracion
+chage -M 60 jane

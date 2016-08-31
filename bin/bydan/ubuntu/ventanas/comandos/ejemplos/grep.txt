@@ -1,0 +1,22 @@
+Buscar
+grep bash /etc/passwd
+
+Con color
+grep --color bash /etc/passwd
+
+Cuantas coincidencias
+grep -c bash /etc/passwd             
+
+Lineas coincidencias
+grep -n bash /etc/passwd
+
+
+Busqueda en Archivos
+grep -v nologin /etc/passwd
+grep -l linux /etc/*
+grep -i linux /etc/*
+grep -w linux /etc/*             
+
+grep -E 'sshd|root|operator' passwd                                    
+
+egrep 'no(b|n)' passwd

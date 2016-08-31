@@ -1,0 +1,4 @@
+A001|Anirban Roy Choudhury|computers|95|Pass|8000
+X006|Mohan Kumar|computers|67|Incomplete|0
+A008|Yogesh|computers|91|Pass|8000
+A010|Zubin|Computers|12|Fail|1500

@@ -1,0 +1,12 @@
+head -3 
+
+head -n 3
+
+ls --help | head
+
+
+Desde esta linea + hasta el final
+nl /etc/passwd | tail -n +22
+
+Live o tiempo real
+tail -f /var/log/mail.log 

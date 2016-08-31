@@ -1,0 +1,5 @@
+Comprimir ‘file1′, ‘file2′ y ‘dir1′ simultáneamente.
+rar a file1.rar file1 file2 dir1 
+
+Descomprimir archivo rar.
+unrar x file1.rar

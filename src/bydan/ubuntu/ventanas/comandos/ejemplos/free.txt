@@ -1,0 +1,3 @@
+Actualizar info cada 10seg
+
+free -s 10

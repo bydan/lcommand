@@ -1,0 +1,4 @@
+Arbol de Directorios
+
+Crear un árbol de directorios (crea padres si no existen).
+mkdir -p /tmp/dir1/dir2

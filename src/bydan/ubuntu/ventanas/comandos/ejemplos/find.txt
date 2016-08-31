@@ -1,0 +1,45 @@
+find [starting directory] [search option] [ search criteria] [result option]
+
+Buscar por nombre
+find . -name "*.bak" -print
+find /etc -name hosts
+
+Si tiene errores
+find /etc -name hosts 2> /dev/null  
+
+Buscar y mostrar formato resultados
+find /etc -name hosts -ls 2> /dev/null
+
+Buscar por Size
+find /etc -size 10c -ls 2>/dev/null
+
+Buscar Size mayor o menor (+,-)
+find /usr -size +100M -ls 2> /dev/null
+
+Multiples opciones
+find /etc -size 10c -type f -ls 2>/dev/null 
+
+Buscar y Borrar
+find . -name "*.bak" -print -exec rm {} \;
+
+Buscar y cambiar permisos
+Buscar ficheros con extensión ‘.rpm’ y modificar permisos.
+find / -name \*.rpm -exec chmod 755 ‘{}’ \;
+
+
+EJEMPLOS
+Buscar ficheros con extensión ‘. bin’ dentro del directorio ‘/ home/user1′.
+find /home/user1 -name \*.bin
+
+Buscar ficheros creados o cambiados dentro de los últimos 10 días.
+find /usr/bin -type f -mtime -10 
+
+
+Sin grupo
+find / -nogroup
+
+Tamaño
+c bytes
+k kilobytes
+M megabytes
+G gigabytes

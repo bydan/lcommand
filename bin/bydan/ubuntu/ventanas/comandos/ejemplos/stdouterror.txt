@@ -1,0 +1,27 @@
+Solo output
+ls /fake /etc/ppp > example.txt
+
+Solo error
+ls /fake /etc/ppp 2> error.txt
+
+output y error
+ls /fake /etc/ppp &> all.txt
+
+output y error en diferentes archivos
+ls /fake /etc/ppp > example.txt 2> error.txt
+
+
+stdin
+cat e intresar datos
+cat
+cat > newfile.txt
+
+tr
+tr 'a-z' 'A-Z'
+
+
+STDIN desde archivo
+tr 'a-z' 'A-Z' < example.txt 
+
+STIND con pipe
+tr 'a-z' 'A-Z' < example.txt > newexample.txt 

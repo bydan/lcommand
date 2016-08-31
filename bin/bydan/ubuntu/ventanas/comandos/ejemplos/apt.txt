@@ -1,0 +1,20 @@
+Acutalizar Listas
+apt-get update
+
+
+Actualizar Paquetes
+apt-get upgrade
+
+Actualiza Sistema Operativo
+apt-get dist-upgrade
+
+
+Instalar Paquete
+apt-get install samba
+
+
+Desinstalar
+apt-get remove samba
+
+Quitar Configs
+apt-get remove --purge samba

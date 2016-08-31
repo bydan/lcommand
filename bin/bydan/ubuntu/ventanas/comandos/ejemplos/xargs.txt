@@ -1,0 +1,8 @@
+Usar muchos argumentos
+
+rm *
+
+ls | xargs rm
+
+opciones
+-0

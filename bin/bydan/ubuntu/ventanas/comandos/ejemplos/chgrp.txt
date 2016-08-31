@@ -1,0 +1,5 @@
+Formato
+chgrp group_name file
+
+Cambiar todo recursivo
+chgrp -R games test_dir

@@ -1,0 +1,10 @@
+cut -d: -f1,5-7 mypasswd
+
+Por Posicion
+ls -l | cut -c1-11,50-
+
+
+Opciones
+-d delimitador
+-f campos
+-c Posicion

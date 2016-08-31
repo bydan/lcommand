@@ -1,0 +1,12 @@
+Grupo actual
+id -g 
+
+
+Grupo actual y secundarios
+id -G  
+
+Todos grupos
+id
+
+Grupos por usuario
+id sysadmin
